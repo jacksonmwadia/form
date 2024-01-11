@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input Types and Attributes</title>
+</head>
+<body>
+  <h1>Form Input Types and Attributes</h1>
+  
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Input Types</legend>
+
+      <label for="text_input">Text:</label>
+      <input type="text" id="text_input" name="text_input" placeholder="Enter text" pattern="[a-zA-Z]+" maxlength="50" minlength="2" required><br><br>
+
+      <label for="email_input">Email:</label>
+      <input type="email" id="email_input" name="email_input" placeholder="example@example.com" maxlength="50" required><br><br>
+
+      <label for="password_input">Password:</label>
+      <input type="password" id="password_input" name="password_input" placeholder="Enter password" minlength="6" required><br><br>
+
+      <label for="number_input">Number:</label>
+      <input type="number" id="number_input" name="number_input" min="1" max="100" required><br><br>
+
+      <label for="date_input">Date:</label>
+      <input type="date" id="date_input" name="date_input" min="2022-01-01" max="2025-12-31" required><br><br>
+
+      <label for="checkbox_input">Checkbox:</label>
+      <input type="checkbox" id="checkbox_input" name="checkbox_input" value="checkbox_value"><br><br>
+
+      <label for="radio_input_1">Radio 1:</label>
+      <input type="radio" id="radio_input_1" name="radio_input" value="radio_1"><br><br>
+
+      <label for="radio_input_2">Radio 2:</label>
+      <input type="radio" id="radio_input_2" name="radio_input" value="radio_2"><br><br>
+
+      <label for="file_input">File:</label>
+      <input type="file" id="file_input" name="file_input" multiple><br><br>
+
+      <label for="range_input">Range:</label>
+      <input type="range" id="range_input" name="range_input" min="0" max="100" step="5"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Attributes</legend>
+
+      <label for="text_input_attr">Placeholder:</label>
+      <input type="text" id="text_input_attr" name="text_input_attr" placeholder="Enter text" required><br><br>
+
+      <label for="text_input_pattern">Pattern (Alphabets only):</label>
+      <input type="text" id="text_input_pattern" name="text_input_pattern" pattern="[a-zA-Z]+" title="Alphabets only" required><br><br>
+
+      <label for="text_input_size">Size (5 characters):</label>
+      <input type="text" id="text_input_size" name="text_input_size" size="5" required><br><br>
+
+      <label for="text_input_maxlength">Maxlength (10 characters):</label>
+      <input type="text" id="text_input_maxlength" name="text_input_maxlength" maxlength="10" required><br><br>
+
+      <label for="text_input_minlength">Minlength (5 characters):</label>
+      <input type="text" id="text_input_minlength" name="text_input_minlength" minlength="5" required><br><br>
+
+      <label for="number_input_min_max">Min& Max (1 to 10):</label>
+      <input type="number" id="number_input_min_max" name="number_input_min_max" min="1" max="10" required><br><br>
+
+      <label for="date_input_min_max">Min& Max Date:</label>
+      <input type="date" id="date_input_min_max" name="date_input_min_max" min="2023-01-01" max="2023-12-31" required><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
